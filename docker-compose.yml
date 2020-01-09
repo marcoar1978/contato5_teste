@@ -6,10 +6,10 @@ services:
     restart: always
     environment:
       TZ: America/Sao_Paulo
-      MYSQL_ROOT_PASSWORD: @spring0836
+      MYSQL_ROOT_PASSWORD: spring0836
       MYSQL_USER: docker
       MYSQL_PASSWORD: docker0836
-      MYSQL_DATABASE: @spring0836
+      MYSQL_DATABASE: spring0836
     ports:
       - "3308:3306"
     networks:
