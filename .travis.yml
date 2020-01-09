@@ -4,9 +4,9 @@ jdk:
 before_install:
   - sudo apt-get update
   - echo "Let's start Maven Package!"
+  - mvn clean package
+  - echo "We are in the Docker folder!"
 script:
-  - mvn test
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - docker-compose build
 before_deploy:
   echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
