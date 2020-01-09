@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-slim
+FROM openjdk:11-jdk-slim
 VOLUME /tmp
 ADD target/contato5-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
