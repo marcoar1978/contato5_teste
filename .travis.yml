@@ -1,10 +1,10 @@
 language: java
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 before_install:
   - sudo apt-get update
   - echo "Let's start Maven Package!"
-  - mvn clean package -DskipTests
+  - mvn clean package 
   - echo "We are in the Docker folder!"
 script:
   - docker-compose build
