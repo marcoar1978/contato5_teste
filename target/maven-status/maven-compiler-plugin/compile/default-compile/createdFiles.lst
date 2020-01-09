@@ -1,0 +1,16 @@
+com\estudo\model\Contato.class
+com\estudo\controller\AutenticacaoController.class
+com\estudo\repository\UsuarioRepository.class
+com\estudo\controller\ContatoController.class
+com\estudo\model\Perfil.class
+com\estudo\security\AutenticacaoViaTokenFilter.class
+com\estudo\security\AutenticacaoService.class
+com\estudo\security\TokenService.class
+com\estudo\dto\TokenDto.class
+com\estudo\Contato5Application.class
+com\estudo\security\SecurityConfiguration.class
+com\estudo\controller\HelloController.class
+com\estudo\form\ContatoForm.class
+com\estudo\repository\ContatoRepository.class
+com\estudo\form\LoginForm.class
+com\estudo\model\Usuario.class
