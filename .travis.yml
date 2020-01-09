@@ -1,9 +1,12 @@
 language: java
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 before_install:
   - sudo apt-get update
   - echo "Let's start Maven Package!"
+  install:
+  - mvn -N io.takari:maven:wrapper
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
   - docker-compose build
 before_deploy:
