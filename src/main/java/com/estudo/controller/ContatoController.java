@@ -65,7 +65,7 @@ public class ContatoController {
 			return ResponseEntity.ok(contato);
 		}
 		return ResponseEntity.notFound().build();
-		
+
 	}
 
 	@DeleteMapping("/{id}")
@@ -75,7 +75,7 @@ public class ContatoController {
 		if (optional.isPresent()) {
 			contatoRepository.deleteById(id);
 			return ResponseEntity.ok().build();
-			
+
 		}
 		return ResponseEntity.notFound().build();
 	}
