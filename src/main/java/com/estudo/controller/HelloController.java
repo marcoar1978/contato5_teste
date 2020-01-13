@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 	@GetMapping
+	@RequestMapping("/teste1")
 	public String testeDeploy() {
 		return "Teste de deploy ok";
 	}
